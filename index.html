@@ -3,15 +3,15 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
+  <title>Evoked questions dataset</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<!-- <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" /> -->
+<h2>Data for 'Asking between the lines', abstract submitted for review</h2>
+<p>We elicited questions and answers from our participants for the following texts. Participants have been anonymized (names are fictional).</p>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
   <ul>
     <li><a href="annotated/constructed-story.html">constructed story</a></li>
     <li><a href="annotated/disco-spice_p1a-094_health_questions_SIF.html">disco-spice_p1a-094_health</a></li>
@@ -23,6 +23,28 @@
     <li><a href="annotated/ted_mdb_2009_questions_SIF.html">ted_mdb_2009</a></li>
     <li><a href="annotated/ted_mdb_2150_questions_SIF.html">ted_mdb_2150</a></li>
   </ul>
+
+<p>Our data will be published in a more workable (e.g., .csv) format upon publication.</p>
+
+<h2>Explanation of the color-coding:</h2>
+<ul>
+        <li>Color hue indicates inter-annotator agreement for a line in the text, as computed by cosine similarity of Smooth Inverse Frequency (SIF) embeddings of the questions.
+        <ul>
+            <li>Shades of blue: High inter-annotator agreement.</li>
+            <li>Shades of red: Low inter-annotator agreement.</li>
+            <li>Shades in between (e.g., purple): Mediocre inter-annotator agreement.</li>
+        </ul>
+        SIF-similarity is only an approximation of question similarity, and you will see that it not always correct (though mostly it is). We use SIF-scores only as a first step, until we have collected further human annotations on 'question equivalence'.
+        </li>
+        <li>Color brightness on a word indicates proportion of workers who highlighted that word (out of all workers who highlighted <i>something in that line</i>).
+        <ul>
+            <li>Light/white/transparent shades: word highlighted by only small proportion of workers.</li>
+            <li>Pure/solid shades: word highlighted by large proportion of workers.</li>
+        </ul></li>
+    </ul>
+
+    <p><b>Possible interpretation strategy:</b> Look for the most intensely-colored words (= cases where workers agreed on what to highlight) of the purest blue (= cases where workers' questions based on that highlight were most similar).</p>
+
 
 </body>
 </html>
