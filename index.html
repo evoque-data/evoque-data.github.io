@@ -9,32 +9,32 @@
 
 <body>
 
-<h2>Data for 'Asking between the lines', abstract submitted for review</h2>
+<h2>Provisional vizualisation of texts annotated with evoked questions, including the TED-Q dataset</h2>
 <p>We elicited questions and answers from our participants for the following texts. Participants have been anonymized (names are fictional).</p>
+<p><b>TED-Q</b>, the TED-talks portion of the dataset, which has been more properly verified, will be published in a more workable (.csv) format upon publication.</p>
 
   <ul>
-    <li><a href="annotated/constructed-story.html">constructed story</a></li>
-    <li><a href="annotated/disco-spice_p1a-094_health_questions_SIF.html">disco-spice_p1a-094_health</a></li>
-    <li><a href="annotated/disco-spice_p1b-041_clerical_habits_questions_SIF.html">disco-spice_p1b-041_clerical_habits</a></li>
-    <li><a href="annotated/ted_mdb_1927_questions_SIF.html">ted_mdb_1927</a></li>
-    <li><a href="annotated/ted_mdb_1971_questions_SIF.html">ted_mdb_1971</a></li>
-    <li><a href="annotated/ted_mdb_1976_questions_SIF.html">ted_mdb_1976</a></li>
-    <li><a href="annotated/ted_mdb_1978_questions_SIF.html">ted_mdb_1978</a></li>
-    <li><a href="annotated/ted_mdb_2009_questions_SIF.html">ted_mdb_2009</a></li>
-    <li><a href="annotated/ted_mdb_2150_questions_SIF.html">ted_mdb_2150</a></li>
+    <li>constructed story: colored by <a href="annotated/constructed-story.html">SIF</a></li>
+    <li>disco-spice_p1a-094_health: colored by <a href="annotated/disco-spice_p1a-094_health_questions_SIF.html">SIF</a></li>
+    <li>disco-spice_p1b-041_clerical_habits: colored by <a href="annotated/disco-spice_p1b-041_clerical_habits_questions_SIF.html">SIF</a></li>
+    <li>ted_mdb_1927: colored by <a href="annotated/ted_mdb_1927_questions_SIF.html">SIF</a>; <a href="annotated/ted_mdb_1927_questions_relatedness.html">Relatedness</a></li>
+    <li>ted_mdb_1971: colored by <a href="annotated/ted_mdb_1971_questions_SIF.html">SIF</a>; <a href="annotated/ted_mdb_1971_questions_relatedness.html">Relatedness</a></li>
+    <li>ted_mdb_1976: colored by <a href="annotated/ted_mdb_1976_questions_SIF.html">SIF</a>; <a href="annotated/ted_mdb_1976_questions_relatedness.html">Relatedness</a></li>
+    <li>ted_mdb_1978: colored by <a href="annotated/ted_mdb_1978_questions_SIF.html">SIF</a>; <a href="annotated/ted_mdb_1978_questions_relatedness.html">Relatedness</a></li>
+    <li>ted_mdb_2009: colored by <a href="annotated/ted_mdb_2009_questions_SIF.html">SIF</a>; <a href="annotated/ted_mdb_2009_questions_relatedness.html">Relatedness</a></li>
+    <li>ted_mdb_2150: colored by <a href="annotated/ted_mdb_2150_questions_SIF.html">SIF</a>; <a href="annotated/ted_mdb_2150_questions_relatedness.html">Relatedness</a></li>
   </ul>
 
-<p>NB. The color-coded visualization of these texts is under development. Moreover, our data will be published in a more workable (e.g., .csv) format upon publication.</p>
+<p>NB. The color-coded visualization of these texts is under development.</p>
 
 <h2>Explanation of the current color-coding:</h2>
 <ul>
-        <li>Color hue indicates inter-annotator agreement for a line in the text, as computed by cosine similarity of Smooth Inverse Frequency (SIF) embeddings of the questions.
+        <li>Color hue indicates inter-annotator agreement for a line in the text, as computed in two ways: cosine similarity of Smooth Inverse Frequency (SIF) embeddings of the questions, or by crowdsourced human question Relatedness judgments.
         <ul>
             <li>Shades of blue: High inter-annotator agreement.</li>
             <li>Shades of red: Low inter-annotator agreement.</li>
             <li>Shades in between (e.g., purple): Mediocre inter-annotator agreement.</li>
         </ul>
-        SIF-similarity is only an approximation of question similarity, and you will see that it not always correct (though mostly it is). We use SIF-scores only as a first step, until we have collected further human annotations on 'question equivalence'.
         </li>
         <li>Color brightness on a word indicates proportion of workers who highlighted that word (out of all workers who highlighted <i>something in that line</i>).
         <ul>
@@ -44,7 +44,6 @@
     </ul>
 
     <p><b>Possible interpretation strategy:</b> Look for the most intensely-colored words (= cases where workers agreed on what to highlight) of the purest blue (= cases where workers' questions based on that highlight were most similar).</p>
-
 
 </body>
 </html>
